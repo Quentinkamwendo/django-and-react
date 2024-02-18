@@ -13,7 +13,7 @@ export default function Dashboard() {
   const { token, user } = useContext(StateContext);
 
   const allProjects = async () => {
-    const response = await axios.get("api/projects/");
+    const response = await axios.get("/api/projects/");
     return response.data;
   };
   const { data, isLoading, error } = useQuery({

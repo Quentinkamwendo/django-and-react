@@ -132,7 +132,7 @@ function AuthLayout() {
   const onLogout = () => mutate();
 
    const allProjects = async () => {
-    const response = await axios.get("api/projects/");
+    const response = await axios.get("/api/projects/");
     return response.data;
   };
   const { data, isLoading, error } = useQuery({

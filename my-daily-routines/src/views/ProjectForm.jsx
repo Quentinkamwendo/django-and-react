@@ -53,7 +53,7 @@ const ProjectForm = () => {
         const response = await axios.patch(`/api/projects/${id}/`, formData);
         return response.data;
       } else {
-        const response = await axios.post("api/projects/", formData, {
+        const response = await axios.post("/api/projects/", formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
